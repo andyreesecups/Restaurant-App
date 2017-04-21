@@ -1,20 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title></title>
+  <meta charset="UTF-8">
+  <title>Restuarant Express</title>
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<div>
-	<div class="container">
+
+  <div class="container">
     <div class="jumbotron">
-      <h1>Hot Restaurant</h1>
-      <h3>Make your Reservation Today!</h3>
+      <h1 class="text-center"><span class="glyphicon glyphicon-fire"></span> Hot Restaurant</h1>
       <hr>
-      <a href="/"><button type="button" id="viewRes" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-eye-open"></span> View Reservations</button></a>
-    </div>
-
-</div>
-
-
+      
+     	 <h2 class="text-center">We Only Have 5 Tables. Book your seat before they all are gone!</h2>
+     	 <div class = "text-center">
+     	 <a href="/add" ><button type="button" class="btn-lg btn-primary"><span class="glyphicon glyphicon-list-alt"></span> View Tables</button></a>
+ 		<a href="/add" ><button type="button" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-credit-card"></span> Make Reservation</button></a>
+		</div>
+      </div>
+      <footer>
+     <div>
+      <ul class="unstyled">
+      <li><a href="#" class = "links">  API Table Link  </a><span class="divider">|</span></li>
+      <li><a href="#" class = "links">API Wait List  </a></li>
+      </ul>
+        </div>
+      </footer>
+	</div>
 </body>
 </html>
