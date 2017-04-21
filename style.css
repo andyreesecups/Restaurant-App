@@ -1,0 +1,27 @@
+.text-center {
+	text-align: center;
+}
+.inline {
+display:inline-block;
+text-align: center;
+padding-left: 340px;
+}
+
+#link {
+display:inline-block;
+float:left;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    border-right:solid 1px #fff;
+}
+li:not(:last-child) { 
+    border-right:solid 1px #fff;
+}

@@ -7,41 +7,52 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
   <div class="container">
     <div class="jumbotron">
-      <h1>Hot Restaurant</h1>
-      <h3>Get Your Table Today!</h3>
+      <h1 class="text-center"><span class="glyphicon glyphicon-fire"></span> Hot Restaurant</h1>
       <hr>
-      <a href="/add"><button type="button" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-plus"></span> Add a Reservation</button></a>
-    </div>
-    <div class="row">
-      <div class="col-lg-12">
-          </div>
-        </div>
+      <h2 class="text-center">Current Reservations and Waiting List</h2>
+      <h4 class ="inline"> <a href="/add" ><button type="button" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-credit-card"></span> Make Reservation</button></a></h4>
 
+    <a href="/index" ><button type="button" class="btn btn-lg btn-default"><span class="glyphicon glyphicon-home"></span></button></a>
+    </div>
+      
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h3 class="panel-title"><strong>Current Reservation</strong></h3>
+            <h4 class="panel-title">Current Reservations</h4>
           </div>
-          <div class="panel-body">
-            <div class="well">
-              <h2 id="name">Scott</h2>
-              <div id="stats">
-                <h3><strong>phone:</strong> <span id="phone">888-888-8888</span></h3>
-                <h3><strong>email:</strong> <span id="email">name@name.com</span></h3>
-                <h3><strong>:</strong> <span id="ID">2000</span></h3>
-              </div>
-            </div>
+          <div class="panel-body" id="tableSection">
           </div>
         </div>
-      </div>
-    </div>
-  </div>
 
+       
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">Waiting List</h4>
+          </div>
+          <div class="panel-body" id="waitlistSection">
+          </div>
+        </div>
+      
+    
+      <footer>
+      <div>
+      <h5> Control Panel</h5>
+     
+     <div>
+      <ul class="unstyled">
+      <li><a href="#" class = "links">Clear Table  </a><span class="divider">|</span></li>
+      <li><a href="#" class = "links">  API Table Link  </a><span class="divider">|</span></li>
+      <li><a href="#" class = "links">API Wait List  </a></li>
+      </ul>
+  
+      </footer>
+   
+  </div>
   <script type="text/javascript">
     
   </script>
